@@ -6,7 +6,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "Gaegu", cursive;
     line-height: 1.1;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   :global(h1) {
@@ -17,19 +17,31 @@
   :global(h2) {
     font-size: 2.5rem;
     margin: 0.5rem 0;
+    font-weight: normal;
   }
 
   :global(h3) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0.5rem 0;
   }
 
   :global(p) {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   :global(a, button) {
     font-size: inherit;
     font-family: inherit;
+  }
+
+  :global(.button) {
+    background: #ffd97b;
+    border: 2.5px solid black;
+    border-radius: 24px 5px 31px 4px/4px 18px 4px 18px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
   }
 </style>

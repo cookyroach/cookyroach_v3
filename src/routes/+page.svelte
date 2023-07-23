@@ -1,105 +1,124 @@
+<script>
+  import Footer from "../lib/footer.svelte";
+</script>
+
 <header>cookyroach</header>
 <main>
-  <div class="container panel">
-    <h1>Hi! I'm a comic creator & illustrator</h1>
-    <img src="img/roachy.png" width="175" alt="Roachy" />
+  <div class="panel" style="background: #ffeaef;">
+    <div class="container">
+      <h1>Hi! I'm a comic creator & illustrator</h1>
+      <img src="img/roachy.png" width="175" alt="Roachy" />
+    </div>
   </div>
-  <!-- <img
-    class="panel"
-    style="height: 250px; padding: 0;"
-    src="img/spaghetti.jpg"
-    alt=""
-  /> -->
-  <div class="panel">
-    <h2>Pet Rocky</h2>
-    <p>My cute comic, read it here:</p>
-    <button>Tapas</button>
-    <button>Webtoons</button>
+  <h2 style="margin-bottom: -1rem;">comics</h2>
+  <div class="panel" style="background: #ffeaef;">
+    <div class="container">
+      <h3>Pet Rocky</h3>
+    </div>
+    <img class="cover" src="img/thumbnail2_larger.jpg" alt="" />
+    <div class="container">
+      <p>90% cute, 10% dark</p>
+      <div class="button-container">
+        <a class="button" href="https://tapas.io/series/Pet-Rocky">Tapas</a>
+        <a
+          class="button"
+          href="https://www.webtoons.com/en/challenge/pet-rocky/list?title_no=530695"
+        >
+          Webtoons
+        </a>
+      </div>
+    </div>
   </div>
-  <!-- <img src="img/pupu_nurse.JPG" alt="" /> -->
+  <div class="panel" style="background: #ffd0ee;">
+    <div class="container">
+      <h3>My sister's boss <br /> is too sweet</h3>
+    </div>
+    <img class="cover" src="img/lick2.jpg" alt="" />
+    <div class="container">
+      <p>too sweet to resist!</p>
+      <div class="button-container">
+        <a
+          class="button"
+          href="https://www.webtoons.com/en/challenge/my-sisters-boss-is-too-sweet/list?title_no=837245"
+        >
+          Read it on Webtoons
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="panel" style="background: #fff6e5;">
-    <h2>Support me</h2>
-    <img width="150" style="margin-bottom: 1rem" src="img/coin.png" alt="" />
-    <div>
-      <a
-        class="button"
-        href="https://www.redbubble.com/people/cookyroach/shop?asc=u"
-        >Redbubble shop</a
-      >
-      <a class="button" href="https://ko-fi.com/cookyroach">Ko-Fi </a>
+    <div class="container">
+      <h2>Support me</h2>
+      <img width="150" src="img/coin.png" alt="" />
+      <div class="button-container">
+        <a
+          class="button"
+          href="https://www.redbubble.com/people/cookyroach/shop?asc=u"
+          >Redbubble shop</a
+        >
+        <a class="button" href="https://ko-fi.com/cookyroach">Ko-Fi </a>
+      </div>
     </div>
   </div>
 </main>
-<footer>
-  <h3>My social media</h3>
-  <ul>
-    <li><a href="https://www.instagram.com/cookyroach/">Instagram</a></li>
-    <li><a href="https://twitter.com/thecookyroach">Twitter</a></li>
-    <li><a href="https://www.tiktok.com/@cookyroach">Tiktok</a></li>
-  </ul>
-  <blockquote>
-    bringing you the best comics <br /> we can pull out of our assets
-  </blockquote>
-</footer>
+<Footer />
 
 <style>
   header {
     text-align: center;
     padding: 1rem;
-    font-size: 2.25rem;
-    /* font-weight: bold; */
+    font-size: 2.5rem;
   }
 
-  button,
-  .button {
-    background: #ffd97b;
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .panel {
     border: 2.5px solid black;
     border-radius: 24px 5px 31px 4px/4px 18px 4px 18px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel h2,
+  .panel h3 {
+    font-size: 2.5rem;
     font-weight: bold;
-    font-size: 1.5rem;
-    padding: 0.25rem 0.5rem;
-    text-decoration: none;
-    color: inherit;
+    margin: 0;
+  }
+
+  .panel p {
+    margin: 0;
+  }
+
+  .panel .cover {
+    border-top: 2.5px solid;
+    border-bottom: 2.5px solid;
   }
 
   .container {
     max-width: 800px;
     margin: auto;
     padding: 1rem;
-    background: #ffeaef;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
   }
 
-  .panel {
-    border: 2.5px solid black;
-    border-radius: 24px 5px 31px 4px/4px 18px 4px 18px;
-    margin: 0 1rem 2rem;
-    padding: 1rem;
-    text-align: center;
+  .button-container {
+    margin-top: 0.5rem;
   }
 
   img {
     max-width: 100%;
-  }
-
-  footer {
-    text-align: center;
-    padding: 1rem 1rem 2rem;
-  }
-
-  footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  footer a {
-    color: #e26788;
-  }
-
-  blockquote {
-    font-style: italic;
-    font-size: 1.25rem;
-    margin: 0;
-    margin-top: 2rem;
   }
 </style>
