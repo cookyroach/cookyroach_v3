@@ -27,6 +27,8 @@
           twitter
         </a> if you want to get in touch!
       </p>
+      <p>Cheers!</p>
+      <img src="img/beer.png" width="175" alt="" />
     </div>
   </div>
   <h2 id="comics" style="margin-bottom: -1rem;">comics</h2>
@@ -34,7 +36,7 @@
     <div class="container">
       <h3>Pet Rocky</h3>
     </div>
-    <img class="cover" src="img/pet_rocky2b.gif" alt="" />
+    <img class="cover" src="img/pet_rocky3.gif" alt="" />
     <div class="container">
       <p>90% cute, 10% dark</p>
       <div class="button-container">

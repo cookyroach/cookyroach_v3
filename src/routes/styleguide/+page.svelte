@@ -6,8 +6,15 @@
   <h2>roachy</h2>
   <div class="panel">
     <div class="row">
-      <img src="img/roachy.png" width="125" alt="" />
-      <img src="img/coin.png" width="125" alt="" />
+      <div>
+        <img src="img/coin.png" alt="" />
+      </div>
+      <div>
+        <img src="img/roachy.png" alt="" />
+      </div>
+      <div>
+        <img src="img/beer.png" alt="" />
+      </div>
     </div>
     <p>arms are optional</p>
   </div>
@@ -15,7 +22,7 @@
   <div class="panel" style="align-items: stretch;">
     <div class="color" style="background: #ffd97b;">cookie #ffd97b</div>
     <div class="color" style="background: #fff6e5;">cava #fff6e5</div>
-    <div class="color" style="background: #ffeaef;">cotton candy #ffeaef</div>
+    <div class="color" style="background: #ffeaef;">rose #ffeaef</div>
     <div class="color" style="background: #ffd0ee;">sweets #ffd0ee</div>
     <div class="color" style="background: #e26788; color: white;">
       gum #e26788
@@ -54,6 +61,10 @@
     margin-top: 1.5rem;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   .panel p {
     margin: 0;
   }
@@ -61,7 +72,15 @@
   .row {
     display: flex;
     gap: 1rem;
+    row-gap: 0;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .row > div {
+    flex: 1 1 100%;
+    max-width: 120px;
   }
 
   .color {

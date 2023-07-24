@@ -44,7 +44,7 @@
     font-family: inherit;
   }
 
-  :global(a:not(.button)) {
+  :global(a) {
     color: #e26788;
     text-decoration: none;
     border-bottom: 3px dotted;
