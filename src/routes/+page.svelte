@@ -2,7 +2,6 @@
   import Footer from "../lib/footer.svelte";
 </script>
 
-<header>cookyroach</header>
 <main>
   <div class="panel" style="background: #ffeaef;">
     <div class="container">
@@ -87,12 +86,6 @@
 <Footer />
 
 <style>
-  header {
-    text-align: center;
-    padding: 1rem;
-    font-size: 2.5rem;
-  }
-
   main {
     display: flex;
     flex-direction: column;

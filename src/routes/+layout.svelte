@@ -1,3 +1,8 @@
+<script>
+  import Header from "../lib/header.svelte";
+</script>
+
+<Header />
 <slot />
 
 <style>
@@ -35,6 +40,12 @@
   :global(a, button) {
     font-size: inherit;
     font-family: inherit;
+  }
+
+  :global(a:not(.button)) {
+    color: #e26788;
+    text-decoration: none;
+    border-bottom: 3px dotted;
   }
 
   :global(.button) {
