@@ -1,6 +1,9 @@
 <slot />
 
 <style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
   :global(body) {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
