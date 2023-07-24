@@ -1,7 +1,3 @@
-<script>
-  import Footer from "../lib/footer.svelte";
-</script>
-
 <main>
   <div class="panel" style="background: #ffeaef;">
     <div class="container">
@@ -13,6 +9,7 @@
       <img
         src="img/roachy.png"
         width="175"
+        height="292"
         style="margin-top: 0.5rem;"
         alt="Roachy"
       />
@@ -83,7 +80,6 @@
     </div>
   </div>
 </main>
-<Footer />
 
 <style>
   main {

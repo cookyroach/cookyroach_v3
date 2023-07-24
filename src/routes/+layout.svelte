@@ -1,9 +1,11 @@
 <script>
   import Header from "../lib/header.svelte";
+  import Footer from "../lib/footer.svelte";
 </script>
 
 <Header />
 <slot />
+<Footer />
 
 <style>
   :global(html) {
@@ -12,7 +14,7 @@
   :global(body) {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-family: "Gaegu", cursive;
+    font-family: "Gaegu", sans-serif;
     line-height: 1.1;
     font-size: 1.75rem;
   }
